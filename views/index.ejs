@@ -6,21 +6,17 @@
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-    <%= new Date() %>
     <h1><%= title %></h1>
-
     <ul>
         <% for (var i = 0; i < items.length; i++) { %>
-            <li><%= items[i].id %></li>
+            <ni><%= items[i].id %></ni>
             <li><%= items[i].name %></li>
-            <li><%= items[i].desc %></li>
         <% } %>
     </ul>
     <form action="/add" method="post">
         <input type="text" name="newItem">
         <input type="submit">
     </form>
-
 <script src="jquery/dist/jquery.js"></script>
 <script src="bootstrap/dist/js/bootstrap.js"></script>
 </body>
