@@ -5,7 +5,7 @@ var app = express();
 
 // configure app
 
-app.set('view_engine', 'ejs');
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 // use middleware
 // define routes
